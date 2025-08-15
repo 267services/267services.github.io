@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "head.html" %}
+
+<body id="page-top">
+{% include "navigation.html" %}
+
+<!-- Masthead -->
+<header class="masthead">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">The page you are looking for was not found or no longer exists.</h2>
+                <a class="btn btn-primary" href="{% block masthead_button_url %}/{% endblock masthead_button_url %}" id="{% block masthead_button_id %}getstarted{% endblock masthead_button_id %}">Go Home</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+</body>
+</html>

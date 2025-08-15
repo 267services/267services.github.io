@@ -1,0 +1,18 @@
+[[contact]]
+name = "Location"
+address = "United States"
+icon = "fa-map-marked-alt"
+
+[[contact]]
+name = "Email"
+address = """<a href="mailto:info@267services.com">info@267services.com</a>"""
+icon = "fa-envelope"
+
+[[contact]]
+name = "Phone"
+address = "+1 (123) 456-7890"
+icon = "fa-mobile-alt"
+
+# [[social]]
+# icon = "fa-github"
+# url = "https://github.com/mattimustang/zola-grayscale"

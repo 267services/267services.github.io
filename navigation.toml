@@ -1,0 +1,7 @@
+[[item]]
+name = "About"
+path = "#about"
+
+[[item]]
+name = "Contact"
+path = "#contact"
