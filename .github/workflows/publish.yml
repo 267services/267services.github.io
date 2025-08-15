@@ -1,7 +1,5 @@
 on: push
 name: Publish Github Pages
-permissions:
-  actions: write
 jobs:
   build:
     runs-on: ubuntu-latest
