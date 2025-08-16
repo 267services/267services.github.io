@@ -17,11 +17,31 @@
 <circle
     cx="500"
     cy="500"
-    r="100"
+    r="110"
     fill="none"
     stroke-opacity="1"
     stroke="teal"
-    stroke-width="40"
+    stroke-width="50"
+/>
+
+<circle
+    cx="500"
+    cy="500"
+    r="220"
+    fill="none"
+    stroke-opacity="1"
+    stroke="teal"
+    stroke-width="50"
+/>
+
+<circle
+    cx="500"
+    cy="500"
+    r="330"
+    fill="none"
+    stroke-opacity="1"
+    stroke="teal"
+    stroke-width="50"
 />
 
 </svg>

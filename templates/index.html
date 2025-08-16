@@ -13,6 +13,7 @@
                     <!-- <h1 class="mx-auto my-0 text-uppercase">{{ config.title }}</h1> -->
                     <div class="mb-2">
                         <!-- <img class="img-fluid mx-auto" src="/img/267.svg" height="200" width="200" /> -->
+                        <!-- <img class="img-fluid mx-auto" src="/img/267-only.svg" width="400" /> -->
                         <img class="img-fluid mx-auto" src="/img/267-full.svg" height="200" />
                     </div>
                     <h2 class="text-white-50 mx-auto mt-2 mb-4">{{ config.description }}</h2>
@@ -62,7 +63,14 @@
     
     <!-- Footer -->
     <footer class="footer bg-black small text-center text-white-50">
-        <div class="container px-4 px-lg-5">{% block footer_copyright %}Copyright {{ config.author }} &copy; {{ now() | date(format="%Y") }} {% endblock footer_copyright %}</div>
+        <div class="container px-4 px-lg-5">
+            Copyright
+            <img class="img-fluid mx-auto" src="/img/267-only.svg" width="40" />
+            {{ config.author }}
+        </div>
+        <div class="container px-4 px-lg-5">
+            &copy; {{ now() | date(format="%Y") }}
+        </div>
     </footer>
 
 </body>
