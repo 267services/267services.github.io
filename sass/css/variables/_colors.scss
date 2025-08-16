@@ -1,11 +1,4 @@
-//
-// Colors
-// 
-
-// Color system
-
 // Grayscale
-
 $white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -19,7 +12,6 @@ $gray-900: #212529;
 $black: #000;
 
 // Colors
-
 $teal: #64a19d;
 $red: #a16468;
 $purple: #7464a1;
@@ -28,7 +20,6 @@ $green: #67c29c;
 $cyan: #1cabc4;
 
 // State colors
-
 $primary: $teal;
 $secondary: $purple;
 $success: $green;
@@ -39,8 +30,8 @@ $light: $gray-100;
 $dark: $gray-900;
 
 // Bootstrap color map
-
-$theme-colors: ("primary": $primary,
+$theme-colors: (
+    "primary": $primary,
     "secondary": $secondary,
     "success": $success,
     "info": $info,
@@ -50,8 +41,8 @@ $theme-colors: ("primary": $primary,
     "dark": $dark);
 
 // Expanded color map
-
-$expanded-colors: ('black': $black,
+$expanded-colors: (
+    'black': $black,
     'white': $white,
 );
 
@@ -59,5 +50,4 @@ $expanded-colors: ('black': $black,
 $theme-colors: map-merge($theme-colors, $expanded-colors);
 
 // Override Bootstrap contrast ratio
-
 $min-contrast-ratio: 2.5;
