@@ -7,6 +7,3 @@ title = "267 Services"
 description = "Enterprise Consulting Services"
 author = "267 Services"
 
-[markdown]
-highlight_code = true
-highlight_theme = "gray-matter-dark"
