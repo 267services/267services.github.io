@@ -1,0 +1,211 @@
+// Colors
+$black: #000
+$cyan: #1cabc4
+$green: #67c29c
+$purple: #7464a1
+$red: #a16468
+$teal: #64a19d
+$white: #fff
+$yellow: #e4c662
+
+// State colors
+$primary: $teal
+$secondary: $purple
+$success: $green
+$info: $cyan
+$warning: $yellow
+$danger: $red
+
+@font-face
+  font-family: lexend
+  src: url("/lexend.ttf")
+
+// Import Bootstrap
+@import "css/bootstrap/scss/bootstrap.scss"
+
+// Global CSS
+html
+    scroll-padding-top: calc(4.5rem - 1px)
+
+body
+    font-family: lexend
+
+// Components
+#mainNav
+    min-height: 3.5rem
+    background-color: $white
+
+    .navbar-toggler
+        font-size: 80%
+        padding: 0.75rem
+        color: $primary
+        border: $border-width solid $primary
+
+        &:focus
+            outline: none
+
+    .navbar-brand
+        color: $black
+        font-weight: 700
+        padding: 0.9rem 0
+
+    .navbar-nav
+        .nav-item
+            &:hover
+                color: fade($white, 80%)
+                outline: none
+                background-color: transparent
+
+            &:active,
+            &:focus
+                outline: none
+                background-color: transparent
+
+    @include media-breakpoint-up(lg)
+        padding-top: 0
+        padding-bottom: 0
+        border-bottom: none
+        background-color: transparent
+        transition: background-color 0.3s ease-in-out
+
+        .navbar-brand
+            padding: 0.5rem 0
+            color: fade-out($white, 0.5)
+
+        .nav-link
+            transition: none
+            padding: 2rem 1.5rem
+            color: fade-out($white, 0.5)
+
+            &:hover
+                color: fade-out($white, 0.25)
+
+            &:active
+                color: $white
+
+        &.navbar-shrink
+            background-color: $white
+
+            .navbar-brand
+                color: $black
+
+            .nav-link
+                color: $black
+                padding: 1.5rem 1.5rem 1.25rem
+                border-bottom: 0.25rem solid transparent
+
+                &:hover
+                    color: $primary
+
+                &:active
+                    color: darken($primary, 15%)
+
+                &.active
+                    color: $primary
+                    outline: none
+                    border-bottom: 0.25rem solid $primary
+
+// Buttons
+.btn
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important
+    padding: 1.25rem 2rem
+    font-size: 80%
+    text-transform: uppercase
+    letter-spacing: 0.15rem
+    border: 0
+
+// Sections
+
+// Masthead
+.masthead
+    position: relative
+    width: 100%
+    height: auto
+    min-height: 35rem
+    padding: 15rem 0
+    background: linear-gradient(to bottom, fade-out($black, 0.7) 0%, fade-out($black, 0.3) 75%, $black 100%), url("/img/masthead.jpg")
+    background-position: center
+    background-repeat: no-repeat
+    background-attachment: scroll
+    background-size: cover
+
+    h1
+        font-size: 2.5rem
+        line-height: 2.5rem
+        letter-spacing: 0.8rem
+        background: linear-gradient(fade-out($white, 0.1), fade-out($white, 1))
+        -webkit-text-fill-color: transparent
+        background-clip: text
+
+    h2
+        max-width: 20rem
+        font-size: 1rem
+
+    @include media-breakpoint-up(md)
+        h1
+            font-size: 4rem
+            line-height: 4rem
+
+    @include media-breakpoint-up(lg)
+        height: 100vh
+        padding: 0
+
+        h1
+            font-size: 6.5rem
+            line-height: 6.5rem
+            letter-spacing: 0.8rem
+
+        h2
+            max-width: 30rem
+            font-size: 1.25rem
+
+// About
+
+.about-section
+    padding-top: 10rem
+    background: linear-gradient(to bottom, $black 0%, fade-out($black, 0.1) 75%, fade-out($black, 0.2) 100%)
+
+    p
+        margin-bottom: 5rem
+
+// Contact
+.contact-section
+    padding-top: 5rem
+
+    .card
+        border: 0
+        border-bottom: 0.25rem solid $primary
+
+        h4
+            font-size: 0.8rem
+            text-transform: uppercase
+            letter-spacing: 0.15rem
+
+        hr
+            opacity: 1
+            border-color: $primary
+            border-width: 0.25rem
+            width: 3rem
+
+    .social
+        margin-top: 5rem
+
+        a
+            text-align: center
+            height: 3rem
+            width: 3rem
+            background: fade-out($white, 0.9)
+            border-radius: 100%
+            line-height: 3rem
+            color: fade-out($white, 0.7)
+
+            &:hover
+                color: fade-out($white, 0.5)
+
+            &:active
+                color: $white
+
+// Footer
+
+.footer
+    padding: 5rem 0

@@ -6,25 +6,21 @@
     
     <title>
       {% if page.title %}
-      {{ page.title }} &middot; {{ config.title }}
+        {{ page.title }} &middot; {{ config.title }}
       {% else %}
-      {{ config.title }} &middot; {{ config.description }}
+        {{ config.title }} &middot; {{ config.description }}
       {% endif %}
     </title>
     
     <link rel="icon" type="image/x-icon" href="{{ get_url(path="img/favicon.ico") }}" />
 
     <script src="https://use.fontawesome.com/releases/v6.7.1/js/all.js" crossorigin="anonymous"></script>
-
-    <link href="https://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
-
-    <link href="{{ get_url(path="css/styles.css") }}" rel="stylesheet" />
-
-    <script src="{{ get_url(path="js/bootstrap.bundle.min.js") }}"></script>
-    <script src="{{ get_url(path="js/scripts.js") }}"></script>
     
-    <link rel="stylesheet" type="text/css" href="{{ get_url(path="css/custom.css") }}">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" />
 
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/scripts.js"></script>
+    
     {% if config.extra.google_analytics_tag %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.google_analytics_tag }}"></script>
