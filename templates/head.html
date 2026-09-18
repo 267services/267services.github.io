@@ -1,8 +1,8 @@
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="{{ config.description }}" />
     <meta name="author" content="{{ config.author }}" />
+    <meta name="description" content="{{ config.description }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     
     <title>
         {% if page is defined and page.title %}
@@ -12,9 +12,15 @@
         {% endif %}
     </title>
     
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" href="/man/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/man/favicon.ico" type="image/x-icon" >
+    <link rel="icon" type="image/png" sizes="16x16" href="/man/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/man/favicon-32x32.png">
+    <link rel="manifest" href="/man/site.webmanifest">
+    <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/styles.css" type="text/css" />
-
+    
     <script src="/js/all.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/scripts.js"></script>
